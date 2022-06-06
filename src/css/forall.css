@@ -5,6 +5,9 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-image: url(/src/img/background.jpg);
@@ -17,6 +20,7 @@ body {
 
 #mainMenu {
     align-items: center;
+    position:fixed;
 }
 
 #boxLogo {
