@@ -46,19 +46,19 @@ html, body, div, span, applet, object, iframe,
     }
 
     :root {
-        --color-bg: #282424;
-        --color-menu: #1c1a1a;
+        --font-family-1: 'Inter', sans-serif;
+        --color-bg: #00050c;
+        --color-menu: #0f0f0f;
         --color-primary: #2d8bff;
         --color-white: #f2f2f2;
 
         --color-grey-1: #3d3d3d;
         --color-grey-2: #797979;
         --color-grey-3: #bababa;
-        
-        --font-inter: var(inter.variable);
     }
 
     body {
+        font-family: var(--font-family-1);
         background-color: var(--color-bg);
         min-width: 350px;
     }

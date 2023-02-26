@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyledHeader } from "@/styles";
+import { StyledHeader } from "@/src/styles";
 import Link from "next/link";
 import { Inter } from "@next/font/google";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -22,7 +22,7 @@ export default function Header() {
       <div className="container">
         <h1 className={inter.variable}>
           <LogoDevIcon color="info" fontSize="large" />
-          <p>.com</p>
+          <p>.br</p>
         </h1>
 
         <button

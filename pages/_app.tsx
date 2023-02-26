@@ -1,6 +1,6 @@
-import "../styles/globals.ts";
+import "../src/styles/globals.ts";
 import type { AppProps } from "next/app";
-import { StyledGlobal } from "@/styles";
+import { StyledGlobal } from "@/src/styles";
 import { UserProvider } from "@/src/contexts";
 
 export default function App({ Component, pageProps }: AppProps) {

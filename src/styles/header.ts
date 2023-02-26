@@ -5,6 +5,7 @@ export const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 101;
   width: 100%;
   background-color: var(--color-menu);
   box-shadow: 0px 0px 3px 0px var(--color-primary);
@@ -31,7 +32,7 @@ export const StyledHeader = styled.header`
     > h1 {
       display: flex;
       align-items: flex-end;
-      font-size: 18px;
+      font-size: 28px;
       font-family: var(--inter-font);
       letter-spacing: 2px;
       text-transform: uppercase;
