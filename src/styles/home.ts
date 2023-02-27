@@ -216,14 +216,122 @@ export const StyledPortfolio = styled.section`
   color: var(--color-grey-3);
   > div {
     margin: 0 10px;
-    padding: 10px;
     background-color: var(--color-menu);
     border-radius: 5px;
     border: 4px double var(--color-primary);
+    padding: 50px 10px;
+    > section {
+      > span {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 15px;
+        > h2 {
+          font-size: 20px;
+          font-weight: 400;
+          letter-spacing: 1px;
+        }
+      }
+      > div {
+        > h3 {
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 1px;
+          color: var(--color-grey-3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 12px;
+          margin-bottom: 40px;
+        }
+        > p {
+          color: var(--color-grey-2);
+          text-align: center;
+        }
+        > ul {
+          margin-top: 60px;
+          > h3 {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--color-grey-3);
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+          }
+          > li {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            color: var(--color-grey-2);
+            margin-top: 10px;
+            > p {
+              display: flex;
+              align-items: flex-start;
+              gap: 6px;
+              margin-left: 10px;
+            }
+            > h4 {
+            }
+            > div {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
+              margin-left: 10px;
+              > p {
+                display: flex;
+                align-items: center;
+              }
+              > span {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .color-1 {
+                  background-color: var(--color-bg);
+                }
+                .color-2 {
+                  background-color: var(--color-menu);
+                }
+                > p {
+                  padding: 6px;
+                  line-height: 22px;
+                  display: flex;
+                  align-items: center;
+                  border-radius: 3px;
+                  > span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    min-width: 130px;
+                  }
+                  > div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    > button {
+                      color: var(--color-grey-1);
+                      background-color: transparent;
+                      cursor: pointer;
+                      border: 1px solid var(--color-grey-1);
+                      padding: 2px 5px;
+                      border-radius: 2px;
+                      width: 100px;
+                      :hover {
+                        color: var(--color-grey-3);
+                        background-color: var(--color-grey-1);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1140px) {
     > div {
-      margin: 0 auto;
+      margin: 50px auto;
     }
   }
 `;

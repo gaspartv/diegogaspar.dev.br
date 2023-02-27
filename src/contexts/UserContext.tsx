@@ -1,11 +1,15 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import { iContextProps, iUserContext } from "../interfaces";
 
 const UserContext = createContext({} as iUserContext);
 
 function UserProvider({ children }: iContextProps) {
+  const [modalGuild, setModalGuild] = useState(false);
+
   return (
-    <UserContext.Provider value={{ children }}>{children}</UserContext.Provider>
+    <UserContext.Provider value={{ modalGuild, setModalGuild }}>
+      {children}
+    </UserContext.Provider>
   );
 }
 
